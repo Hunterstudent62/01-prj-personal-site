@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Add your HTML content here -->
+
+  <!-- HEADER / HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <img class="hero-photo" src="your-photo.jpg" alt="Your Name" />
+      <div class="hero-text">
+        <h1>Your Name</h1>
+        <p class="hero-subtitle">Web Development Student • Portfolio</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- BIO -->
+    <section class="card" id="bio">
+      <h2>Bio</h2>
+      <p>
+        Hi! I’m Your Name. I’m learning web development and building projects as I go.
+        This website is where I’ll collect my work, track my progress, and share what I’m proud of.
+      </p>
+      <p>
+        I’m especially interested in clean UI, game-inspired design, and writing clear code as I learn.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="card" id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML (structure)</li>
+        <li>CSS (layout & styling)</li>
+        <li>JavaScript (basics)</li>
+        <li>Responsive design (mobile-friendly pages)</li>
+        <li>Git & GitHub (version control)</li>
+      </ul>
+      <p class="small-note">Tip: edit this list as you learn new tools.</p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="card" id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-tile">
+          <h3>Project Title 1</h3>
+          <p>
+            A short description of what this project does, what you learned, and why it matters.
+          </p>
+          <a href="#" target="_blank" rel="noopener">View project</a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-tile">
+          <h3>Project Title 2</h3>
+          <p>
+            Another project summary. You can link to a live site, GitHub repo, or a write-up page.
+          </p>
+          <a href="#" target="_blank" rel="noopener">View project</a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-tile">
+          <h3>Project Title 3</h3>
+          <p>
+            Keep it simple. One paragraph is enough. Add more projects by copying a tile.
+          </p>
+          <a href="#" target="_blank" rel="noopener">View project</a>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-tile">
+          <h3>Project Title 4</h3>
+          <p>
+            If you don’t have projects yet, leave placeholders like this and fill them in later.
+          </p>
+          <a href="#" target="_blank" rel="noopener">View project</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONTACT -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <h2>Contact</h2>
+      <p>
+        Want to reach out? Email me or connect with me online.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <p class="small-note">© <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <!-- Tiny script just to keep the year updated (optional, safe to remove) -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
