@@ -3,189 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Hunter Hatfield's portfolio: software development, GIS and environmental data, game development, zoo experience, and digital art." />
+  <title>Hunter Hatfield | Software, GIS, Game Development & Art</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- NAVIGATION -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Primary navigation">
     <div class="nav-inner">
-      <a class="nav-brand" href="#top">Your Name</a>
-
+      <a class="nav-brand" href="#top">Hunter Hatfield</a>
       <div class="nav-links">
-        <a href="#top">Top</a>
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#software">Software & Data</a>
+        <a href="#games">Games</a>
+        <a href="#experience">Experience</a>
+        <a href="#art">Art</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- HEADER / HERO -->
   <header class="hero" id="top">
     <div class="hero-inner">
-      <img class="hero-photo" src="your-photo.jpg" alt="Your Name" />
-
+      <img class="hero-photo" src="your-photo.jpg" alt="Hunter Hatfield" />
       <div class="hero-text">
+        <p class="eyebrow">Tampa Bay, Florida</p>
         <h1>Hunter Hatfield</h1>
-        <p class="hero-subtitle">Computer Science Student • Portfolio</p>
+        <p class="hero-subtitle">Computer Science Student • Software & GIS • Game Developer • Digital Artist</p>
+        <p class="hero-summary">I build software, interactive systems, visual projects, and data-driven tools, with long-term interests in scientific programming, ecology, conservation, and games.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#software">View technical work</a>
+          <a class="button" href="https://www.linkedin.com/in/hunter-hatfield-448168254/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button" href="https://github.com/Hunterstudent62" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
     </div>
   </header>
 
   <main class="container">
-
-    <!-- BIO -->
-    <section class="card" id="bio">
-      <h2>Bio</h2>
-      <p>
-        Hiya! I’m Hunter Hatfield. I’m a Comp Sci student at USF, as well as a video game designer and project manager. 10+ years of experience creating indie projects both independently as well as leading teams of 15+ individuals. Involved with many aspects of game production, including testing, 2D and 3D artwork, project management, programming, system design, level design, writing, and production.
-      </p>
-      <p>
-        This website shows off a couple of my projects and skills I have learned along the way. Feel free to reach out if you have any questions or would like to connect!
-      </p>
+    <section class="card intro-card" id="about">
+      <div>
+        <p class="section-kicker">About</p>
+        <h2>Software, creative technology, and animal science interests</h2>
+      </div>
+      <div class="two-column-copy">
+        <p>I am a computer science student at the University of South Florida and a multimedia game-design graduate with more than a decade of independent project experience. My background spans programming, game systems, QA/testing, web development, visual design, project leadership, data visualization, animal care, and zoo nutrition.</p>
+        <p>I am especially interested in roles where software and data intersect with ecology, conservation, environmental science, GIS, research, or animal-care systems. Outside of career work, I continue to develop games and digital art through Retnuh Productions.</p>
+      </div>
     </section>
 
-    <!-- SKILLS -->
     <section class="card" id="skills">
+      <p class="section-kicker">Technical toolkit</p>
       <h2>Skills</h2>
-
-      <ul class="skills-list">
-        <li>
-          <img class="skill-icon" src="c-programming.png" alt="C icon" />
-          <span>C Programming</span>
-        </li>
-        <li>
-          <img class="skill-icon" src="Csharp_Logo.png" alt="C# icon" />
-          <span>C# Programming</span>
-        </li>
-        <li>
-          <img class="skill-icon" src="CSP-Clip-Studio-Icon.png" alt="Clip Studio Paint icon" />
-          <span>Clip Studio Paint</span>
-        </li>
-        <li>
-          <img class="skill-icon" src="HTML5_logo_and_wordmark.svg.png" alt="HTML5 icon" />
-          <span>HTML5 with CSS</span>
-        </li>
-        <li>
-          <img class="skill-icon" src="logo-microsoft-365.png" alt="Microsoft 365 icon" />
-          <span>Microsoft 365 Suite</span>
-        </li>
-        <li>
-          <img class="skill-icon" src="RISC-V-logo-square.svg.png" alt="RISC-V icon" />
-          <span>RISC-V Assembly Language</span>
-        </li>
-        <li>
-          <img class="skill-icon" src="rpgmakerlogo.png" alt="RPG Maker icon" />
-          <span>RPG Maker</span>
-        </li>
-        <li>
-          <img class="skill-icon" src="unity.webp" alt="Unity icon" />
-          <span>Unity</span>
-        </li>
-        <li>
-          <img class="skill-icon" src="WordPress_blue_logo.svg.png" alt="WordPress icon" />
-          <span>WordPress</span>
-        </li>
-        <li>
-          <img class="skill-icon" src="Octicons-mark-github.svg" alt="GitHub icon" />
-          <span>GitHub</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="card" id="projects">
-      <h2>Projects</h2>
-
-      <div class="projects-grid">
-        <article class="project-tile">
-          <h3>Kid Hop-o Rising Star</h3>
-          <p>My long-term project. Previously a Udemy project, this project is now in Godot and I work as project lead with several other developers under my helm. We are hoping to get a vertical slice to pitch to publishers soon!</p>
-          <a href="https://kidhop-o.com/" target="_blank" rel="noopener">View project</a>
-        </article>
-
-        <article class="project-tile">
-          <h3>Planarian's Tale 2</h3>
-          <p>A video game I made for the Indie Game Making Contest back in 2017. One of my first fully completed projects.</p>
-          <a href="https://retnuhproductions.itch.io/planarians-tale-2" target="_blank" rel="noopener">View project</a>
-        </article>
-
-        <article class="project-tile">
-          <h3>DKCRPG</h3>
-          <p>A fan game I'm working on in RPG Maker based on the Donkey Kong franchise. I plan to use pre-rendered graphics similar to how graphics were rendered on the Super Nintendo.</p>
-        </article>
-
-        <article class="project-tile">
-          <h3>Various Kid Hop-o Related Projects</h3>
-          <p>Don't have a lot to show here yet, but I'm working on several free-to-play minigames, browser games, and possibly a web comic. Stay tuned!</p>
-          <a href="#" target="_blank" rel="noopener">View project</a>
-        </article>
+      <div class="skill-groups">
+        <article class="skill-group"><h3>Programming & Web</h3><p>C, C#, Java, JavaScript, Python, C++, HTML5, CSS, Ruby, GML, GitHub, WordPress</p></article>
+        <article class="skill-group"><h3>GIS, Data & BI</h3><p>QGIS, Power BI, Microsoft Excel, data cleaning, mapping, dashboard design, visualization, QA/QC, recordkeeping</p></article>
+        <article class="skill-group"><h3>Game & Interactive</h3><p>Unity, Godot, Unreal Engine, GameMaker Studio, RPG Maker MZ/VX Ace, systems design, level design, UI, testing</p></article>
+        <article class="skill-group"><h3>Art & Multimedia</h3><p>Clip Studio Paint, Aseprite, GIMP, Photoshop, Illustrator, Maya, Blender, Spine 2D, Figma</p></article>
+        <article class="skill-group"><h3>Zoo & Animal Systems</h3><p>Species-specific diet preparation, feeder-insect husbandry, reptile care, sanitation, welfare observation, introductory ZIMS and Zoo Diet NaviGator</p></article>
+        <article class="skill-group"><h3>Systems & Coursework</h3><p>Program Design in C, Java Programming, Computer Organization, RISC-V assembly concepts, Discrete Structures, Calculus I–III, project management</p></article>
       </div>
     </section>
 
-    <!-- GALLERY -->
-    <section class="card" id="gallery">
-      <h2>Portrait Gallery</h2>
-      <p class="small-note">
-        My most recent hobby (within the last year) has been creating digital portraits using Clip Studio Paint. Here are some of my favorite pieces I've done so far!
-      </p>
-
-      <div class="gallery-grid">
-        <figure class="gallery-item">
-          <img src="Hop-o CS practice 2.jpg" alt="Portrait artwork 1" />
-          <figcaption>Kid Hop-o, protagonist of my main game development project</figcaption>
-        </figure>
-
-        <figure class="gallery-item">
-          <img src="King duel CS practice 5.jpg" alt="Portrait artwork 2" />
-          <figcaption>A portrait of Nintendo villains from the DKC and Super Mario franchises</figcaption>
-        </figure>
-
-        <figure class="gallery-item">
-          <img src="blaze.png" alt="Portrait artwork 3" />
-          <figcaption>A portrait of Blaze from the Sonic the Hedgehog franchise</figcaption>
-        </figure>
-
-        <figure class="gallery-item">
-          <img src="springyboii.jpg" alt="Portrait artwork 4" />
-          <figcaption>A portrait of Springtrap from the FNAF franchise</figcaption>
-        </figure>
-
-        <figure class="gallery-item">
-          <img src="art test.png" alt="Portrait artwork 5" />
-          <figcaption>A new art style I was trying out, something between pixel art and traditional digital art</figcaption>
-        </figure>
-
-        <figure class="gallery-item">
-          <img src="Midna.jpg" alt="Portrait artwork 6" />
-          <figcaption>A portrait of Midna from the Legend of Zelda franchise</figcaption>
-        </figure>
+    <section class="card" id="software">
+      <div class="section-heading-row">
+        <div><p class="section-kicker">Featured work</p><h2>Software & Data Projects</h2></div>
+        <p class="section-summary">Selected projects showing programming, data, GIS, web development, AI-assisted workflows, and technical problem solving.</p>
       </div>
+      <div class="projects-grid featured-grid">
+        <article class="project-tile featured-project"><div><div class="tag-row"><span class="tag">QGIS</span><span class="tag">Power BI</span><span class="tag">Python</span><span class="status">In progress</span></div><h3>Florida Invasive Reptile GIS Dashboard</h3><p>Cleaning and standardizing public occurrence records for invasive and nonnative reptiles in Florida, then building species- and county-level maps and an interactive dashboard to examine distribution and reporting patterns.</p></div><p class="project-note">Designed as a portfolio bridge between computer science, GIS, environmental data, and my animal/conservation interests.</p></article>
+        <article class="project-tile featured-project"><div><div class="tag-row"><span class="tag">C#</span><span class="tag">Unity</span><span class="tag">Gameplay Systems</span></div><h3>Kid Hop-o Player Movement System</h3><p>An extensive Unity/C# controller for a momentum-focused platform RPG, supporting running, jumping, spin states, fluttering, wall interactions, ledge and vine behavior, custom air physics, animation synchronization, and designer tuning.</p></div><a href="https://github.com/Hunterstudent62/01-prj-personal-site/tree/main/code-samples/kid-hopo-player-movement" target="_blank" rel="noopener">View architecture notes</a></article>
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">C</span><span class="tag">Linked Lists</span><span class="tag">Pointers</span></div><h3>Tutor Directory</h3><p>Refactored a university C project into a multi-file tutor directory backed by a dynamically allocated linked list. Supports sorted insertion, duplicate detection, preference-based search, record deletion, and safe memory cleanup.</p></div><a href="https://github.com/Hunterstudent62/01-prj-personal-site/tree/main/code-samples/c-tutor-directory" target="_blank" rel="noopener">View source & build notes</a></article>
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">Java</span><span class="tag">2D Arrays</span><span class="tag">Animal Data</span></div><h3>Poultry Production Tracker</h3><p>Cleaned and expanded a Java coursework project that tracks egg production across individual birds and weeks, validates input, calculates totals and weekly averages, and identifies the highest producer.</p></div><a href="https://github.com/Hunterstudent62/01-prj-personal-site/tree/main/code-samples/java-poultry-tracker" target="_blank" rel="noopener">View source & project notes</a></article>
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">JavaScript</span><span class="tag">NASA API</span><span class="tag">Responsive UI</span></div><h3>NASA Space Explorer</h3><p>Interactive web project built around NASA astronomy data, with API-driven content, responsive presentation, date controls, gallery behavior, and error/loading states.</p></div><div class="link-row"><a href="https://hunterstudent62.github.io/07-nasa-space-explorer/" target="_blank" rel="noopener">Live project</a><a href="https://github.com/Hunterstudent62/07-nasa-space-explorer" target="_blank" rel="noopener">GitHub</a></div></article>
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">HTML/CSS</span><span class="tag">Responsive Design</span><span class="tag">Localization</span></div><h3>Intel Sustainability Web Experience</h3><p>Responsive educational webpage created through the Global Career Accelerator, emphasizing adaptive layouts, interactive presentation, localization considerations, and support across display sizes.</p></div><div class="link-row"><a href="https://hunterstudent62.github.io/03-project-intel-locilization/" target="_blank" rel="noopener">Live project</a><a href="https://github.com/Hunterstudent62/03-project-intel-locilization" target="_blank" rel="noopener">GitHub</a></div></article>
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">JavaScript</span><span class="tag">AI</span><span class="tag">Deployment</span></div><h3>L'Oréal AI Chatbot</h3><p>AI-assisted web-development project exploring chatbot interaction, JavaScript integration, user-facing recommendations, and deployment workflows.</p></div><div class="link-row"><a href="https://hunterstudent62.github.io/08-prj-loreal-chatbot/" target="_blank" rel="noopener">Live project</a><a href="https://github.com/Hunterstudent62/08-prj-loreal-chatbot" target="_blank" rel="noopener">GitHub</a></div></article>
+      </div>
+      <div class="coursework-callout"><div><p class="section-kicker">Coursework experiment</p><h3>Clean Water Catch</h3><p>A browser-game prototype built for a Global Career Accelerator assignment that <strong>required generative AI to be used throughout the project, including visual-asset generation</strong>. I include it as an example of AI-assisted JavaScript prototyping and iteration, not as a showcase of my personal visual-art style.</p></div><a class="button" href="https://hunterstudent62.github.io/05-charity-water-game-prototype/" target="_blank" rel="noopener">View coursework project</a></div>
     </section>
 
+    <section class="card" id="games"><p class="section-kicker">Creative development</p><h2>Game Development</h2><div class="projects-grid game-grid">
+      <article class="project-tile"><div><h3>Kid Hop-o: Rising Star</h3><p>Long-term story-driven platform RPG developed through Retnuh Productions. I lead production and contribute across programming, systems design, level design, UI, writing, QA, art direction, documentation, and team coordination.</p><p class="project-note">I coordinate a multidisciplinary team of 15+ contributors and am currently developing a polished vertical slice.</p></div><div class="link-row"><a href="https://kidhop-o.com/" target="_blank" rel="noopener">Project site</a><a href="https://retnuhproductions.itch.io/" target="_blank" rel="noopener">Retnuh Productions</a></div></article>
+      <article class="project-tile"><div><h3>DKCRPG</h3><p>An independent fan-game project in RPG Maker MZ inspired by the Donkey Kong Country series. I use it as a space for RPG system design, writing, UI experimentation, portraits, custom assets, and pre-rendered visual workflows.</p><p class="project-note">Additional DKCRPG portraits, pre-rendered models, and in-game production assets will be added as they are curated for presentation.</p></div></article>
+      <article class="project-tile"><div><h3>Planarian's Tale 2</h3><p>A completed game created for the 2017 Indie Game Making Contest and one of my earlier full project releases. It represents the beginning of my longer-running production and game-design experience.</p></div><a href="https://retnuhproductions.itch.io/planarians-tale-2" target="_blank" rel="noopener">Play / view project</a></article>
+    </div></section>
+
+    <section class="card" id="experience"><p class="section-kicker">Background</p><h2>Experience & Education</h2><div class="timeline">
+      <article class="timeline-item"><div class="timeline-meta">May – Aug 2026</div><div><h3>Animal Nutrition Intern <span>• ZooTampa at Lowry Park</span></h3><p>Prepared and distributed species-specific diets, supported high-volume nutrition-center operations, maintained feeder insects, followed sanitation and quality-control procedures, and gained introductory exposure to ZIMS, Zoo Diet NaviGator, Power BI, animal behavior, enrichment, welfare, and cooperative-care concepts. Completed a Cuban iguana nutrition research summary for staff.</p></div></article>
+      <article class="timeline-item"><div class="timeline-meta">2018 – Present</div><div><h3>Producer / Project Manager / Indie Game Developer <span>• Retnuh Productions</span></h3><p>Lead a distributed game-development team of more than 15 contributors while designing systems, levels, UI, narrative, production workflows, technical documentation, testing processes, and publisher-facing materials.</p></div></article>
+      <article class="timeline-item"><div class="timeline-meta">Apr 2024 – Present</div><div><h3>Owner, Animal Care & Operations <span>• Discoid Roaches Tampa</span></h3><p>Operate a small feeder-insect supply business serving reptile keepers and a retail pet store, managing colony husbandry, environmental control, population monitoring, inventory, customer orders, records, and bulk fulfillment.</p></div></article>
+    </div><div class="education-grid">
+      <article class="education-card"><p class="education-date">Expected 2028</p><h3>University of South Florida</h3><p><strong>Bachelor of Arts in Computer Science</strong><br />Minor in Geographic Information Systems</p></article>
+      <article class="education-card"><p class="education-date">December 2023</p><h3>Hillsborough Community College</h3><p><strong>Associate of Science in Multimedia: Game Design</strong><br />High Honors • 3.8 GPA • Phi Theta Kappa</p></article>
+    </div></section>
+
+    <section class="card" id="training"><p class="section-kicker">Training</p><h2>Certifications & Professional Development</h2><div class="credential-grid">
+      <div><strong>Global Career Accelerator</strong><span>Web Development • AI-Powered JavaScript • AI Professional Skills • Intercultural Skills, May 2026</span></div>
+      <div><strong>LinkedIn Learning</strong><span>Maya: nHair • Unreal Essential Training • Project Management Foundations</span></div>
+      <div><strong>GameDev.tv</strong><span>C# Unity Game Developer 2D</span></div>
+    </div></section>
+
+    <section class="card" id="art"><div class="section-heading-row"><div><p class="section-kicker">Visual work</p><h2>Art & Multimedia</h2></div><p class="section-summary">Digital illustration and character-focused work created primarily in Clip Studio Paint, alongside game-production art and experimentation with 2D/3D workflows.</p></div><div class="gallery-grid">
+      <figure class="gallery-item"><img src="Hop-o CS practice 2.jpg" alt="Digital portrait of Kid Hop-o" /><figcaption>Kid Hop-o character artwork</figcaption></figure>
+      <figure class="gallery-item"><img src="King duel CS practice 5.jpg" alt="Digital portrait featuring Nintendo villains" /><figcaption>Donkey Kong Country / Mario character study</figcaption></figure>
+      <figure class="gallery-item"><img src="blaze.png" alt="Digital portrait of Blaze the Cat" /><figcaption>Blaze character portrait</figcaption></figure>
+      <figure class="gallery-item"><img src="springyboii.jpg" alt="Digital portrait of Springtrap" /><figcaption>Springtrap character portrait</figcaption></figure>
+      <figure class="gallery-item"><img src="art test.png" alt="Experimental digital art style" /><figcaption>Hybrid pixel / digital-art style experiment</figcaption></figure>
+      <figure class="gallery-item"><img src="Midna.jpg" alt="Digital portrait of Midna" /><figcaption>Midna character portrait</figcaption></figure>
+    </div><div class="asset-callout"><h3>Game Art & Production Assets</h3><p>I am also curating additional game-production work for this section, including DKCRPG portraits, pre-rendered models, UI assets, and in-game graphics. The goal is to show not only finished illustrations, but how visual assets function inside interactive projects.</p></div></section>
   </main>
 
-  <!-- CONTACT -->
-  <footer class="footer" id="contact">
-    <div class="container footer-inner">
-      <h2>Contact</h2>
-      <p>Want to reach out? Email me or connect with me online.</p>
-
-      <div class="contact-links">
-        <a href="mailto:flamingleafgames@gmail.com">flamingleafgames@gmail.com</a>
-        <a href="https://github.com/Hunterstudent62" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/hunter-hatfield-448168254/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-
-      <p class="small-note">© <span id="year"></span> Hunter Hatfield</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <footer class="footer" id="contact"><div class="container footer-inner"><div><p class="section-kicker">Contact</p><h2>Let's connect</h2><p>Open to entry-level software, GIS/data, QA/support, environmental technology, research, and other technical roles where my interdisciplinary background is useful.</p></div><div class="contact-links"><a href="mailto:retnuhproductionsofficial@gmail.com">Email</a><a href="https://github.com/Hunterstudent62" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/hunter-hatfield-448168254/" target="_blank" rel="noopener">LinkedIn</a><a href="https://kidhop-o.com/" target="_blank" rel="noopener">Kid Hop-o</a></div><p class="small-note">© <span id="year"></span> Hunter Hatfield</p></div></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
