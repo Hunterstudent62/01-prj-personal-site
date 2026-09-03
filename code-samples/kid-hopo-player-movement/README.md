@@ -30,8 +30,14 @@ PlayerMovement
 
 The controller intentionally uses direct `Rigidbody2D.velocity` control for precise arcade-platformer movement. The system also contains legacy timing and state behavior that was documented rather than aggressively rewritten so that the current gameplay feel remains stable.
 
+## Detailed case study
+
+For a fuller technical breakdown covering movement states, custom jump physics, environmental probes, ledge/vine interactions, cutscene movement, runtime tuning, animation integration, and refactoring lessons, see:
+
+**[Full movement-system case study](CASE_STUDY.md)**
+
 ## Portfolio note
 
-This page documents the architecture and responsibilities of the system without publishing the entire proprietary game project. The cleaned source is maintained as part of the private Kid Hop-o development repository and can be discussed in more detail during technical review or interviews.
+This documentation explains the architecture and responsibilities of the system without publishing the entire proprietary game project. The cleaned source is maintained as part of the private Kid Hop-o development repository and can be discussed in more detail during technical review or interviews.
 
 **Project site:** https://kidhop-o.com/
