@@ -10,6 +10,7 @@ Personal portfolio site for Hunter Hatfield, a computer science student and mult
 - C and Java coursework samples
 - Web and AI-assisted development projects
 - Game development through Retnuh Productions
+- Custom JavaScript plugins and scripts for RPG Maker MZ
 - DKCRPG pre-rendered technical-art workflow
 - Maya / Blender / pixel-art production samples
 - Clip Studio Paint illustration
