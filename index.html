@@ -33,6 +33,7 @@
         <p class="hero-summary">I build software, interactive systems, and data-driven tools across programming, GIS, game development, and technical art, with long-term interests in scientific software, ecology, conservation, and games.</p>
         <div class="hero-actions">
           <a class="button primary" href="#software">View technical work</a>
+          <a class="button" href="Hunter_Hatfield_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
           <a class="button" href="https://www.linkedin.com/in/hunter-hatfield-448168254/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="button" href="https://github.com/Hunterstudent62" target="_blank" rel="noopener">GitHub</a>
         </div>
@@ -93,7 +94,7 @@
       <p class="section-kicker">Creative development</p>
       <h2>Game Development</h2>
       <div class="projects-grid game-grid">
-        <article class="project-tile"><div><div class="tag-row"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Production Leadership</span></div><h3>Kid Hop-o: Rising Star</h3><p>Long-term story-driven platform RPG developed through Retnuh Productions. I lead a multidisciplinary team of 15+ contributors and work across programming, systems design, level design, UI, writing, QA, art direction, technical documentation, and production planning.</p><p class="project-note">The current focus is a polished vertical slice that brings the project's movement, battle, narrative, art, and audio systems together in a publisher-ready demo.</p></div><div class="link-row"><a href="https://kidhop-o.com/" target="_blank" rel="noopener">Project site</a><a href="https://retnuhproductions.itch.io/" target="_blank" rel="noopener">Retnuh Productions</a></div></article>
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Production Leadership</span></div><h3>Kid Hop-o: Rising Star</h3><p>Long-term story-driven platform RPG developed through Retnuh Productions. I lead an active multidisciplinary team and have coordinated more than 15 contributors across the project's development, working across programming, systems design, level design, UI, writing, QA, art direction, technical documentation, and production planning.</p><p class="project-note">The current focus is a polished, publisher-facing vertical slice that brings the project's movement, battle, narrative, art, and audio systems together.</p></div><div class="link-row"><a href="https://kidhop-o.com/" target="_blank" rel="noopener">Project site</a><a href="https://retnuhproductions.itch.io/" target="_blank" rel="noopener">Retnuh Productions</a></div></article>
 
         <article class="project-tile"><div><div class="tag-row"><span class="tag">RPG Maker MZ</span><span class="tag">JavaScript</span><span class="tag">Blender</span><span class="tag">Clip Studio</span></div><h3>DKCRPG</h3><p>An independent Donkey Kong Country-inspired fan RPG used to explore RPG systems, writing, UI, character portraits, custom gameplay behavior, and SNES-style pre-rendered graphics.</p><p class="project-note">I have written custom JavaScript plugins and scripts to extend RPG Maker MZ with unique systems and behaviors beyond its stock functionality, while also creating 3D-to-2D assets, portrait sets, and other production art.</p></div><a href="#dk-pipeline">View production-art breakdown</a></article>
 
@@ -161,7 +162,7 @@
       <p class="section-kicker">Background</p><h2>Experience & Education</h2>
       <div class="timeline">
         <article class="timeline-item"><div class="timeline-meta">May – Aug 2026</div><div><h3>Animal Nutrition Intern <span>• ZooTampa at Lowry Park</span></h3><p>Prepared and distributed species-specific diets using written diet sheets and digital scales, supported high-volume nutrition-center operations, maintained feeder insects, followed sanitation and quality-control procedures, and gained introductory exposure to ZIMS, Zoo Diet NaviGator, Power BI, animal behavior, enrichment, welfare, and cooperative-care concepts. Completed a Cuban iguana nutrition research summary for staff.</p></div></article>
-        <article class="timeline-item"><div class="timeline-meta">2018 – Present</div><div><h3>Producer / Project Manager / Indie Game Developer <span>• Retnuh Productions</span></h3><p>Lead a distributed game-development team of more than 15 contributors while designing systems, levels, UI, narrative, production workflows, technical documentation, testing processes, and publisher-facing materials.</p></div></article>
+        <article class="timeline-item"><div class="timeline-meta">2018 – Present</div><div><h3>Producer / Project Manager / Indie Game Developer <span>• Retnuh Productions</span></h3><p>Lead an active distributed game-development team and have coordinated more than 15 contributors across programming, art, audio, writing, and voice work while designing systems, levels, UI, narrative, production workflows, technical documentation, testing processes, and publisher-facing materials.</p></div></article>
         <article class="timeline-item"><div class="timeline-meta">Apr 2024 – Present</div><div><h3>Owner, Animal Care & Operations <span>• Discoid Roaches Tampa</span></h3><p>Operate a feeder-insect supply business serving local reptile keepers and a retail pet store, managing colony husbandry, environmental control, population monitoring, inventory, client orders, records, and bulk fulfillment of up to several thousand insects.</p><a class="business-link" href="https://www.discoidroachestampa.com/" target="_blank" rel="noopener"><img src="discoid-roaches-tampa-logo.svg" alt="Discoid Roaches Tampa logo" /><span>Visit Discoid Roaches Tampa</span></a></div></article>
       </div>
       <div class="education-grid">
@@ -230,6 +231,11 @@
       wrapper.setAttribute("role", "button");
       wrapper.setAttribute("aria-label", `${image.alt}. Open larger preview.`);
       wrapper.setAttribute("title", "Click to enlarge");
+
+      if (image.closest(".pixel-asset-row")) {
+        wrapper.style.background = "var(--soft)";
+        image.style.background = "var(--soft)";
+      }
 
       image.parentNode.insertBefore(wrapper, image);
       wrapper.appendChild(image);
